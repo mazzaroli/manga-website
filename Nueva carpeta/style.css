@@ -1,0 +1,28 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    font-size: 16px;
+}
+
+.header {
+    background: gold;
+    height: 3rem;
+}
+
+.conteiner {
+    background: lime;
+
+}
+
+.footer {
+    background: gold;
+    height: 6rem;
+    margin-top: auto;
+}

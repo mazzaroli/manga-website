@@ -1,0 +1,244 @@
+@import url("https://fonts.googleapis.com/css?family=Muli&display=swap");
+:root {
+  --purple: #5E1DFC;
+  --purple-mid: #8F57FD;
+  --purple-light: #AB88FF;
+  --mint: #21c08b;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  outline: none;
+  color: white;
+}
+
+body {
+  background-color: var(--purple-mid);
+  font-family: 'Muli', sans-serif;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 80px;
+  background: var(--mint);
+}
+
+.header .header-logo {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  width: 200px;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.register {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 30px 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(var(--mint)), to(var(--purple-light)));
+  background: linear-gradient(var(--mint), var(--purple-light));
+  min-height: calc(100vh - 200px);
+}
+
+.register__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 700px;
+  min-width: 440px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 2px solid white;
+  border-radius: 40px;
+  padding: 60px 68px 40px;
+  margin: 20px;
+}
+
+.register__container--form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.register__container--form label {
+  font-size: 14px;
+}
+
+.register__container--remember-me {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 10px;
+}
+
+.register__container--remember-me a {
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.register__container--remember-me a:hover {
+  text-decoration: underline;
+  font-size: 17px;
+  -webkit-transition: 450ms;
+  transition: 450ms;
+}
+
+.register__container--social-media > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.register__container--social-media > div > img {
+  width: 30px;
+  margin-right: 10px;
+}
+
+.register__container--register a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  /* align-items: flex-end; */
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.register__container--register a:hover {
+  text-decoration: underline;
+  font-size: 17px;
+  -webkit-transition: 450ms;
+  transition: 450ms;
+}
+
+.input {
+  background-color: transparent;
+  border-top: 0px;
+  border-right: 0px;
+  border-bottom: 2px solid white;
+  border-left: 0px;
+  font-family: 'Multi', sans-serif;
+  font-size: 16px;
+  margin-bottom: 20px;
+  padding: 0px 10px;
+  outline: none;
+  height: 50px;
+}
+
+::-webkit-input-placeholder {
+  color: white;
+}
+
+:-ms-input-placeholder {
+  color: white;
+}
+
+::-ms-input-placeholder {
+  color: white;
+}
+
+::placeholder {
+  color: white;
+}
+
+.button {
+  background: rgba(255, 255, 255, 0.3);
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: bold;
+  font-family: 'Multi', sans-serif;
+  border-radius: 40px;
+  height: 50px;
+  letter-spacing: 1px;
+  margin: 10px 0px;
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100px;
+  width: 100%;
+  background: var(--purple-light);
+}
+
+.footer a {
+  cursor: pointer;
+  font-size: 14px;
+  padding-left: 30px;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+  font-size: 17px;
+  font-weight: bold;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+}
+
+@media only screen and (max-width: 600px) {
+  .register__container {
+    background: transparent;
+    border: none;
+    padding: 30px 38px 0px;
+    width: 100%;
+  }
+  .footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
+/*# sourceMappingURL=register.css.map */
